@@ -55,6 +55,13 @@ pub fn run() {
     } else {
         count += 1;
     }
+
+    // 这里好奇怪
+    let us = UsState::Alabama;
+    match us {
+        aaaa => println!("hello ssd"),
+        bbbb => println!("world dsda"),
+    }
 }
 
 fn plus_one(x: Option<i32>) -> Option<i32> {
